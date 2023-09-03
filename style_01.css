@@ -10,12 +10,12 @@
 #frame01 {
 	font-family: "Open Sans";
 }
-#frame01 .header {
+.page-title {
 	margin: 80px auto;
 	width: 845px;
 }
 
-#frame01 .header h2 {
+.page-title__subtitle {
 	background: linear-gradient(90deg, #4343ff 0%, #f96d6d 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -29,7 +29,7 @@
 	line-height: normal;
 	text-transform: uppercase;
 }
-#frame01 .header h1 {
+.page-title__title {
 	color: var(--black-whites-110-c-11, #110c11);
 	text-align: center;
 	font-family: "GalanoGrotesque-Medium";
@@ -38,7 +38,7 @@
 	font-weight: 400;
 	line-height: 120%; /* 55.2px */
 }
-#frame01 .solutions {
+.cards-container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -46,8 +46,12 @@
 	gap: 36px;
 }
 
-#frame01 .solution {
-	width: calc(100% / 3 - 36px);
+:root {
+	--cards-container-gap: 36px;
+}
+
+.cards-container__card {
+	width: calc(100% / 3 - var(--cards-container-gap));
 	display: inline-flex;
 	padding: 22px;
 	flex-direction: column;
@@ -56,7 +60,7 @@
 	background-color: white;
 }
 
-#frame01 .solution > h3 {
+.cards-container__card__title {
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 700;
@@ -64,7 +68,7 @@
 	text-transform: uppercase;
 }
 
-#frame01 .solution > p {
+.cards-container__card__text {
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 400;
