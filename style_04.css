@@ -1,0 +1,94 @@
+#frame04 {
+	font-family: "Montserrat", sans-serif;
+	color: #333;
+	background: #f9f9fa;
+}
+#frame04 main {
+	padding: 0 90px 30px 90px;
+	width: 927px;
+	margin: 0 auto;
+}
+#frame04 .article {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+#frame04 .article > h3 {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+#frame04 .article > p {
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+#frame04 .images {
+	margin-bottom: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 15px;
+}
+
+#frame04 .banner {
+	width: 927px;
+	margin: 0 auto;
+	border-radius: 4px;
+	background: #0079c8;
+	padding: 40px 50px 30px 50px;
+	display: flex;
+	align-items: flex-end;
+}
+
+#frame04 .text-wrapper {
+	width: 70%;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	color: #fff;
+}
+#frame04 .text-wrapper > .title {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+}
+#frame04 .text-wrapper > h1 {
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 44px;
+}
+#frame04 .button-wrapper {
+	width: 30%;
+}
+
+#frame04 .button-wrapper > button {
+	display: flex;
+	width: 261px;
+	height: 56px;
+	padding: 0px 40px;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	border-radius: 4px;
+	background: #fff;
+	color: #0079c8;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 16px;
+	border: none;
+}
+
+#frame04 .button-wrapper > button:hover {
+	cursor: pointer;
+}
