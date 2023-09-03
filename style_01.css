@@ -36,7 +36,7 @@
 	font-weight: 400;
 	line-height: 120%; /* 55.2px */
 }
-#frame01 > .solutions {
+#frame01 .solutions {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -44,7 +44,7 @@
 	gap: 36px;
 }
 
-#frame01 > .solution {
+#frame01 .solution {
 	width: calc(100% / 3 - 36px);
 	display: inline-flex;
 	padding: 22px;
@@ -54,7 +54,7 @@
 	background-color: white;
 }
 
-#frame01 > .solution > h3 {
+#frame01 .solution > h3 {
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 700;
@@ -62,7 +62,7 @@
 	text-transform: uppercase;
 }
 
-#frame01 > .solution > p {
+#frame01 .solution > p {
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 400;
