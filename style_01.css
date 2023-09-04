@@ -7,7 +7,7 @@
 		url("./fonts/GalanoGrotesque-Medium.woff") format("woff");
 }
 
-#frame01 {
+.solutions {
 	font-family: "Open Sans";
 }
 .solutions__title-container {
@@ -51,23 +51,16 @@
 		font-size: 2rem;
 	}
 }
-.solutions {
+.solutions__cards {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 36px;
-}
-@media screen and (max-width: 900px) {
-	.solutions {
-		gap: 10px;
-	}
-}
-:root {
 	--solutions-gap: 36px;
+	gap: var(--solutions-gap);
 }
 @media screen and (max-width: 900px) {
-	:root {
+	.solutions__cards {
 		--solutions-gap: 10px;
 	}
 }
