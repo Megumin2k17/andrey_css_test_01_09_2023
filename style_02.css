@@ -1,4 +1,4 @@
-#frame02 {
+.partnership {
 	font-family: "Source Sans 3", sans-serif;
 	color: #56565a;
 	font-size: 16px;
@@ -7,41 +7,44 @@
 	line-height: 22px;
 	background-color: #fff;
 }
-#frame02 .content-wrapper {
+
+.partnership-content {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 60px;
 	gap: 60px;
 }
 
-#frame02 .content-wrapper > div {
+.partnership__article-wrapper,
+.partnership__cards {
 	display: flex;
 	flex-wrap: wrap;
 	width: calc(50% - 60px);
 }
-#frame02 .article-wrapper {
+
+.partnership__article-wrapper {
 	flex-direction: column;
 	justify-content: center;
 }
 
-#frame02 h2 {
+.partnership__article-title {
 	font-family: "Roboto Condensed";
 	font-size: 36px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 38px;
 }
-#frame02 .article {
+.partnership__article {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 	margin-bottom: 30px;
 }
-#frame02 .actions {
+.partnership__actions {
 	display: flex;
 	gap: 15px;
 }
-#frame02 .actions > button {
+.partnership__action-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,11 +59,26 @@
 	border: none;
 }
 
-#frame02 .actions > button:hover {
+.partnership__action-button:hover {
 	cursor: pointer;
 }
 
-#frame02 .card {
+.partnership__cards {
+	gap: 15px;
+}
+.partnership__left-col,
+.partnership__right-col {
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	gap: 15px;
+}
+
+.partnership__right-col {
+	align-items: stretch;
+}
+
+.partnership__card {
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
@@ -70,44 +88,31 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	height: 100%;
 }
-#frame02 .card > img {
+.partnership__card-img {
 	width: 30px;
 	margin: 15px;
 }
-#frame02 .card > p {
+.partnership__card-text {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 19px;
 }
-#frame02 .card > h4 {
+.partnership__card-title {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 22px;
 }
 
-#frame02 .card > hr {
+.partnership__card-hr {
 	margin: 15px auto;
 	width: 170px;
 }
 
-#frame02 .cards {
-	gap: 15px;
-}
-#frame02 .right-col,
-#frame02 .left-col {
-	display: flex;
-	flex-direction: column;
-	width: 270px;
-	gap: 15px;
-}
-
-#frame02 .right-col {
-	align-items: stretch;
-}
-#frame02 .right-col .card {
-	display: flex;
-	height: 100%;
+.card > hr {
+	margin: 15px auto;
+	width: 170px;
 }
