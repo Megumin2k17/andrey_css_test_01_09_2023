@@ -1,0 +1,134 @@
+.partnership {
+	font-family: "Source Sans 3", sans-serif;
+	color: #56565a;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 60px;
+	--partnership-gap: 60px;
+	gap: var(--partnership-gap);
+}
+@media screen and (max-width: 997px) {
+	.partnership {
+		flex-direction: column;
+	}
+}
+
+.partnership__article-wrapper,
+.partnership__cards {
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(50% - var(--partnership-gap));
+}
+@media screen and (max-width: 997px) {
+	.partnership__article-wrapper,
+	.partnership__cards {
+		width: 100%;
+	}
+}
+.partnership__article-wrapper {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.partnership__article-title {
+	font-family: "Roboto Condensed";
+	font-size: 2.2rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 38px;
+}
+.partnership__article {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+.partnership__actions {
+	display: flex;
+	gap: 15px;
+}
+.partnership__action-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 40px;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	background-color: #0a467e;
+	border: none;
+}
+
+.partnership__action-button:hover {
+	cursor: pointer;
+}
+
+.partnership__cards {
+	gap: 15px;
+}
+
+.partnership__first-col,
+.partnership__second-col {
+	display: flex;
+	flex-direction: column;
+	width: 270px;
+	--col-gap: 15px;
+	gap: var(--col-gap);
+}
+@media screen and (max-width: 1400px) {
+	.partnership__first-col,
+	.partnership__second-col {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 998px) {
+	.partnership__first-col,
+	.partnership__second-col {
+		width: calc(50% - var(--col-gap));
+	}
+}
+@media screen and (max-width: 686px) {
+	.partnership__first-col,
+	.partnership__second-col {
+		width: 100%;
+	}
+}
+.partnership__second-col {
+	align-items: stretch;
+}
+
+.partnership__card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 1px solid #ededed;
+	background: #f7f7f7;
+	padding: 22px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100%;
+}
+.partnership__card-img {
+	width: 30px;
+	margin: 15px;
+}
+.partnership__card-text {
+	font-size: 0.9rem;
+}
+.partnership__card-title {
+	font-size: 1.2rem;
+	font-weight: 700;
+	line-height: 22px;
+}
+
+.partnership__card-hr {
+	margin: 15px auto;
+	width: 170px;
+}
+
+.card > hr {
+	margin: 15px auto;
+	width: 170px;
+}
