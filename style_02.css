@@ -1,12 +1,7 @@
 .partnership {
 	font-family: "Source Sans 3", sans-serif;
 	color: #56565a;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 22px;
 	background-color: #fff;
-
 	display: flex;
 	flex-wrap: wrap;
 	padding: 60px;
@@ -23,7 +18,7 @@
 .partnership__cards {
 	display: flex;
 	flex-wrap: wrap;
-	width: calc(50% - 60px);
+	width: calc(50% - var(--partnership-gap));
 }
 @media screen and (max-width: 997px) {
 	.partnership__article-wrapper,
@@ -38,7 +33,7 @@
 
 .partnership__article-title {
 	font-family: "Roboto Condensed";
-	font-size: 36px;
+	font-size: 2.2rem;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 38px;
@@ -60,10 +55,7 @@
 	padding: 12px 40px;
 	color: #fff;
 	text-align: center;
-	font-size: 16px;
-	font-style: normal;
 	font-weight: 600;
-	line-height: 20px;
 	background-color: #0a467e;
 	border: none;
 }
@@ -76,32 +68,33 @@
 	gap: 15px;
 }
 
-.partnership__left-col,
-.partnership__right-col {
+.partnership__first-col,
+.partnership__second-col {
 	display: flex;
 	flex-direction: column;
 	width: 270px;
-	gap: 15px;
+	--col-gap: 15px;
+	gap: var(--col-gap);
 }
 @media screen and (max-width: 1400px) {
-	.partnership__left-col,
-	.partnership__right-col {
+	.partnership__first-col,
+	.partnership__second-col {
 		width: 100%;
 	}
 }
 @media screen and (max-width: 998px) {
-	.partnership__left-col,
-	.partnership__right-col {
-		width: calc(50% - 15px);
+	.partnership__first-col,
+	.partnership__second-col {
+		width: calc(50% - var(--col-gap));
 	}
 }
 @media screen and (max-width: 686px) {
-	.partnership__left-col,
-	.partnership__right-col {
+	.partnership__first-col,
+	.partnership__second-col {
 		width: 100%;
 	}
 }
-.partnership__right-col {
+.partnership__second-col {
 	align-items: stretch;
 }
 
@@ -122,14 +115,10 @@
 	margin: 15px;
 }
 .partnership__card-text {
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 19px;
+	font-size: 0.9rem;
 }
 .partnership__card-title {
-	font-size: 18px;
-	font-style: normal;
+	font-size: 1.2rem;
 	font-weight: 700;
 	line-height: 22px;
 }
