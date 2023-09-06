@@ -1,14 +1,9 @@
-#frame03 {
+.progress-board {
 	font-family: "Helvetica";
-}
-
-#frame03 .progress-board {
 	width: 370px;
 	padding: 24px;
 	background: #fff;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
 	line-height: 20px;
 	display: flex;
 	flex-direction: column;
@@ -16,30 +11,34 @@
 	gap: 24px;
 	align-self: stretch;
 }
+@media screen and (max-width: 400px) {
+	.progress-board {
+		width: 100%;
+	}
+}
 
-#frame03 .progress-board > h4 {
+.progress-title {
 	font-size: 18px;
-	font-style: normal;
 	font-weight: 700;
 	line-height: 22px;
 }
 
-#frame03 .progress-board > .row > .title {
+.progress-row__title {
 	font-weight: 500;
 }
 
-#frame03 .progress {
+.progress-status {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 8px;
 	align-self: stretch;
 }
-#frame03 .progress > .progress-info {
+.progress-info {
 	color: #77bb2f;
 }
 
-#frame03 .progress-line {
+.progress-line {
 	border-radius: 9999px;
 	background: #eef3f7;
 	display: flex;
@@ -47,19 +46,19 @@
 	align-items: flex-start;
 	align-self: stretch;
 }
-#frame03 .green-line {
+.green-line {
 	width: 126px;
 	height: 4px;
 	border-radius: 9999px;
 	background: #77bb2f;
 }
 
-#frame03 .row img {
+.progress-row-icon {
 	margin-right: 10px;
 	width: 16px;
 }
 
-#frame03 .row {
+.progress-row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -67,10 +66,11 @@
 	border-radius: 6px;
 }
 
-#frame03 .row span {
+.progress-row-title,
+.progress-row-info {
 	display: inline-block;
 }
-#frame03 .row > .title {
+.progress-row-title {
 	display: flex;
 	align-items: center;
 }

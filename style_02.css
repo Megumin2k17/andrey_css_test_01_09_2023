@@ -11,6 +11,7 @@
 @media screen and (max-width: 997px) {
 	.partnership {
 		flex-direction: column;
+		padding: 10px;
 	}
 }
 
@@ -128,7 +129,8 @@
 	width: 170px;
 }
 
-.card > hr {
-	margin: 15px auto;
-	width: 170px;
+@media screen and (max-width: 400px) {
+	.partnership__card-hr {
+		width: 100%;
+	}
 }
